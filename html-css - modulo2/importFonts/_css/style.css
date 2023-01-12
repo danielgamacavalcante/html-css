@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@font-face {
+    font-family: 'bubble';
+    src: url('../_fonts/Bubble\ Bobble.otf') format('opentype'),
+     url('../_fonts/Bubble\ Bobble.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    font-family: Arial, Helvetica, verdana;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-weight: bold; /*light; normal; bold; bolder*/
+    /*font-size: 20px; /*Padrão 16px*/
+}
+h2{
+    font-family: 'bubble';
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="_css/style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        header{
+            background-color: black;
+            box-shadow: 2px 3px lightgray;
+            border-radius: 2px;
+            transition: transform 1s;
+
+        }
+        header:hover{
+            transform: scale(1.01);
+        }
+        header > h1{
+            margin: 0;
+        }
+        nav{
+            background-color: aqua;
+            text-align: right;
+            padding: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        nav > a{
+            font: 20px 'Pacifico' sans-serif;
+            text-decoration: none;
+            color: rgb(12, 11, 11);
+            padding: 3px;
+            transition: 0.5s;
+        }
+        a:hover{
+            font-weight: bolder;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Olá mundo</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Cadastro</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+    <hr id="hr1">
+    <main>
+            <section class="sec1">
+                <h2 id="h2tamanho">Dev Curioso</h2>
+                <hr id="hr2">
+                <p id="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam,
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, mollitia sunt nobis beatae repellat quasi, 
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatum sunt incidunt nam at molestias dignissimos
+                    quis iste ab reiciendis tempore numquam commodi, maxime distinctio pariatur ullam dicta eveniet asperiores? ipsa earum culpa cupiditate fuga qui dolorum enim veritatis atque nesciunt pariatur animi? Reprehenderit, illo! consequuntur ipsum consequatur, alias tempore ipsa sunt quaerat laudantium asperiores qui ullam quos blanditiis. Facilis, mollitia molestias. Ad iusto modi ea.</p>
+        
+                <div id="divLeiaMais">
+                    Veja mais aqui:
+                    <p>texto escondido</p>
+                </div>
+            </section>
+        <hr>
+        <section>
+            <div>
+                Homem:<input type="radio" name="escolhasexo" id="simH" class="transitionRadiobox"><label for="escolhasexo">Sim</label>
+                <input type="radio" name="escolhasexo" id="naoH" class="transitionRadiobox"><label for="escolhasexo">Não</label>
+            </div>
+            <div>
+                Mulher:<input type="radio" name="escolhasexo2" id="simM" class="transitionRadiobox"><label for="simM">Sim</label>
+                <input type="radio" name="escolhasexo2" id="naoM" class="transitionRadiobox"><label for="naoM">Não</label>
+            </div>
+            <hr>
+            <div id="divborda">
+                <legend> Do que você gosta:</legend>
+                <input type="checkbox" name="escolha" id="futebol" class="transitionCheckbox"><label for="futebol" >Futebol</label>
+                <input type="checkbox" name="escolha" id="cinema" class="transitionCheckbox"><label for="cinema" >Cinema</label>
+                <input type="checkbox" name="escolha" id="emcasa" class="transitionCheckbox"><label for="emcasa" >Ficar em casa</label>
+            </div>
+        </section>
+        <section>
+            <div>
+                <ol type="I">
+                    <li>Animes:</li>
+                    <ul>
+                        <li class="zoom">
+                            <a href="#">Gu Daoist master</a>
+                        </li>
+                        <li class="zoom">
+                            I am the fated villain
+                        </li>
+                    </ul>
+                </ol>
+        
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="_script/script.js"></script>
+</body>
+</html>

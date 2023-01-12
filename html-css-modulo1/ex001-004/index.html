@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport", content="with=device-with, initial-scale=1.0">
+	<link rel="shortcut icon" href="imagens/favicon/favicon.ico" type="image/x-icon">
+	<title>Minha primeira págisna web</title>
+	<style>
+		body{
+		background: rgb(56,120,154);
+		color: white;
+		font: normal 18pt Arial;
+		}
+	</style>
+</head>
+<body>
+	<h1>Olá, mundo!</h1>
+	<hr>
+	<p>Aqui é um parágrafo!</p>
+	<img src="imagens/HTML5.png" alt="Ícone do HTML5"> <!-- Aqui é uma imagem em subpasta-->
+	<p>Também podemos carregar imagens de um link</p>
+	<img src="https://d1v8cmtpnjamtp.cloudfront.net/courses/JSFULL/logo_1632447024880.svg"  alt="Logo do Javascript"> <!--Aqui vai um link de endereço imagem-->
+	<div>Clique aqui</div>
+	<p>&& para e - || para ou - ! negação</p> <!-- operadores de controle -->
+	<p>&copy;<br>
+&#x1F596;</p>
+	<script>
+
+		/*
+			DNS = Sistema de Nomes de Domínio
+			URL= Localizador Uniforme de Recursos
+			HTML= Linguagem de Marcação de Texto
+			DOM= Modelo de documento de objeto
+		*/
+		var x = 10
+		var idade = '10'
+		var nota = 8.2
+
+		document.write('<br>Olá, mundo!</br>') //Escreve o texto com uma quebra de linha
+		document.write(window.document.charset)  //Descobrir que estilo de gramática é usado
+		document.write('<br>'+window.navigator.appName+'</br>') // Mostra o nome do navegador
+		document.write('<br>'+window.document.URL)
+		document.write('<br>'+ (x+10) +'</br>') //operadores aritimédicos
+		document.write('<br>'+ (x-10) +'</br>')
+		document.write('<br>'+ (x*10) +'</br>')
+		document.write('<br>'+ (x%10) +'</br>') //resto da divisão
+		document.write('<br>'+ (x**2) +'</br>') // Potencia
+		//Operadores de decisão
+		var media = nota ? 'Aprovado' : 'Reprovado' // Operador ternário
+		document.write('<br>'+(x==idade)+'</br>') //Comparação de valor
+		document.write('<br>'+(x===idade)+'</br>') //Comparação de valor e Tipo
+		document.write(media)
+		x = ++x // abreviação de operador de adição +1
+		x += 21 // Atualização de x recebendo o valor contido nele + 11
+		document.write(x)
+
+	</script>
+</body>
+</html>

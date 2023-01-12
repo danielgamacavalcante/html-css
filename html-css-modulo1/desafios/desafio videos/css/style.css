@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(102, 96, 96);
+}
+.container{
+    
+    width: 50% !important;
+    margin: auto;
+    text-align: center;
+
+}
+table{
+   margin: auto;
+}
+
+h1{
+    color: white;
+}

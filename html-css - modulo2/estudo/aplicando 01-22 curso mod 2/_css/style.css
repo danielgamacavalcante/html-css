@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Caso queira resetar layout de navegadores*/
+/*
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+*/
+*{
+    margin-top: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/*===========================================================*/
+p{
+    
+    text-align: justify;
+    transition: transform 2s;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+p:active{
+    transform: rotateY(360deg);
+}
+
+/*===========================================================*/
+/*transição de cor em 1 seg, ao tocar com o mouse*/
+h1{
+    padding-left: 4px;
+    color: white;
+    width: 200px;
+    transition: color 1s;
+}
+h1:hover{
+    color: aqua;
+}
+/*============================================================*/
+/*h2tamanho vai crescer sua fonte e mudar de cor, caso precionado também mudara para outra cor*/
+#h2tamanho{
+    transition: 1s;
+    width: 200px;
+}
+#h2tamanho:hover{
+    color: aqua;
+    font-size: xx-large;
+}
+
+#h2tamanho:active{
+    animation: piscaPisca 2s infinite;
+}
+@keyframes piscaPisca{
+    0%{color: aqua;}
+    10%{color: aqua;}
+    15%{color: #43ee0f;}
+    20%{color: #43ee0f;}
+    25%{color: aqua;}
+    30%{color: aqua;}
+    35%{color: #43ee0f;}
+    40%{color: #43ee0f;}
+    45%{color: aqua;}
+    50%{color: aqua;}
+    55%{color: #43ee0f;}
+    60%{color: #43ee0f;}
+    65%{color: aqua;}
+    70%{color: aqua;}
+    75%{color: #43ee0f;}
+    80%{color: #43ee0f;}
+    85%{color: aqua;}
+    90%{color: aqua;}
+    95%{color: #43ee0f;}
+    100%{color: aqua;}
+}
+/*============================================================*/
+/*Fazendo o Filho P da Div ficar escondido e aparecer ao enconstar o mouse em cima*/
+#divLeiaMais{
+    width: 150px;
+    transition: display;
+}
+#divLeiaMais > p {
+    display: none;
+}
+#divLeiaMais:hover > p{
+    display: block;
+    color: white;
+    background-color: blue;
+    font-weight: bolder;
+    width: 140px;
+}
+/*Fazendo o texto mudar para Bolder ao enconstar o mouse*/
+#divLeiaMais:hover{
+    font-weight: 700;
+}
+/*============================================================*/
+/*Gira a caixa quando selecionada*/
+.transitionCheckbox{
+    transition: transform 0.5s;
+}
+.transitionCheckbox:checked{
+    transform: rotateY(360deg);
+}
+/*===========================================================*/
+/*Aumenta a escala do radio quando mouse enconsta*/
+.transitionRadiobox{
+    transition: transform 0.5s;
+}
+.transitionRadiobox:hover{
+    transform: scale(1.5);
+}
+/*===========================================================*/
+#divborda{
+    /*border: 3px solid black;*/
+    /*borda com 3 de espessura sólida com cor black*/
+    width: 98%;
+    margin: auto;
+    border-radius: 5px;
+   box-shadow: 3px 4px 8px rgb(149, 160, 160);
+   /*box com sombra*/
+    transition: transform 0.5s;
+    padding: 7px;
+    
+  
+}
+#divborda:hover{
+    transform: scale(1.02);
+}
+
+/*===========================================================*/
+#hr1{
+    height: 4px;
+    transition: 0.2s;
+    background-color: darkgrey;
+    border-radius: 2px;
+    border: 0;
+    margin-top: 4px;
+}
+
+
+
+/*===========================================================*/
+#hr2{
+    height: 4px;
+    transition: 0.2s;
+    background-color: darkgrey;
+    border-radius: 2px;
+    border: 0;
+    max-width: 1322px;
+}
+#hr2:hover{
+    max-width: 1330px;
+    padding: 1px;
+    background-color: aqua;
+    border-radius: 20px;
+    transform: scale(1.005);
+}
+/*===========================================================*/
+/*Criei uma classe chamada zoom que irá aumentar a escala de 1.03 em 0.5s ao tocar mouser*/
+.zoom{
+    transition: 0.5s;
+}
+.zoom:hover{
+    transform: scale(1.03);
+}
+/*===========================================================*/

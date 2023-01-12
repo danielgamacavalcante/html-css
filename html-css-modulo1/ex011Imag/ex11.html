@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <picture>
+        <!--Primeiro coloca imagem menor-->
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <!--Segundo coloca imagem média-->
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png" >
+        <!--Coloca imagem maior, será executado da maior pra menor-->
+        <img src="imagens/g.png" alt="imagem maior">
+    </picture>
+    <h1>Reproduzir Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML</p>
+    <audio preload="metadata" controls loop>
+        <!--Primeiro a tentar executar-->
+        <source src="audio/We Wish You A Merry Christmas - DJ Williams.mp3" type="audio/mpeg"> 
+        <!--Segundo a tentar executar-->
+        <source src="audio/We Wish You A Merry Christmas - DJ Williams.ogg" type="audio/ogg">
+        <!--terceiro a tentar executar-->
+        <source src="audio/We Wish You A Merry Christmas - DJ Williams.wav" type="audio/wav">
+        <!--Caso falha, tem a opção de download-->
+        <p>Infelizmente seu navegador não suporta essa tipo de arquivo 
+            <a href="audio/We Wish You A Merry Christmas - DJ Williams.mp3">Clique aqui para o donwload</a></p>
+    </audio>
+
+</body>
+</html>

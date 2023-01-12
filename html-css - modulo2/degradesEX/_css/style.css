@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to bottom, #055749 30%, #51F0D5,#0DD6B5,#145C50,#0AA38A );
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    text-shadow: 5px 2px 3px #044439a2;
+}
+div{
+    margin: auto;
+    text-align: center;
+    width: auto;
+   
+}
+
+#div1{
+    background-image: linear-gradient(to bottom, #4FFFDC , #3FCCD0,#3D8577 75%);
+    display: flex;
+    width: 200px;
+    height: 200px;
+}
+#div2{
+    background-image: linear-gradient(to left, #34403A ,#285238 8%,#138a36,#04e824 , #18ff6d );
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+#div3{
+    background-image: radial-gradient(circle,#fff07c,#80ff72, #7ee8fa, #eec0c6,#e58c8a );
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+#div4{
+    background-image: linear-gradient(to right, #34403A ,#285238 8%,#138a36,#04e824 , #18ff6d );
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+#div5{
+    background-image: linear-gradient(to top, #4FFFDC , #3FCCD0,#3D8577 75%);
+    background-color: black;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+
+}
+
+
