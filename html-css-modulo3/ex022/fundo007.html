@@ -6,24 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento Vertical</title>
     <style>
+
         #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
             height: 500px;
             background-color: yellow;
             padding: 10px;
 
+
         }
         #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
             height: 200px;
-            width: 200px;
+            width: 400px;
             background-color: blue;
+
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
+        *{
+            margin: 0;
+        }
+        header{
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: right;
+            
+        }
+        a{
+            margin-right: 3px;
+        }
+        a:hover{
+            background-color: dimgrey;
+            padding: 8px;
+            font-weight: bolder;
+            
+        }
+        main{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
     </style>
 </head>
 <body>
-    <section id="container">
-        <article id="conteudo">
-
-        </article>
-    </section>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Cadastre-se</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+    <main>
+        <section id="container">
+            <article id="conteudo">
+    
+            </article>
+        </section>
+    </main>
+    
 </body>
 </html>

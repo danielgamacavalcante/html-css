@@ -3,7 +3,7 @@
 
 @font-face {
 font-family: 'Android';
-src: url('../fontes/idroid.otf') format('opentype');
+src: url('fontes/idroid.otf') format('opentype');
 font-weight: normal;
 }
 
@@ -19,10 +19,9 @@ font-weight: normal;
 --fonte-secundaria: 'Android', sans-serif;
 }
 *{
-    padding: 0;
+   
     margin: 0;
-    border: 0;
-    box-sizing: border-box;
+   
 }
 body{
     background-color: var(--cor0);
@@ -140,7 +139,7 @@ main p{
     font-weight: bold;
    
  }
- main a{
+ main a:link{
     color: var(--cor4);
     font-weight: bold;
     text-decoration: none;
@@ -151,6 +150,10 @@ main a:hover{
     text-decoration: underline;
     font-size: 18px;
 }
+main a:visited{
+    color: blueviolet;
+}
+
 /*=========Video===============*/
 div.video{
     margin: 0 -14px 30px -14px;
@@ -282,4 +285,4 @@ footer a:hover{
 }
 .zoom:hover{
     transform: scale(1.03);
-}  
+}    
