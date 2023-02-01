@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="icon/icon-engrenagem.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Exemplo síte notícias</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --cor1: #4f5f73;
+        --cor2: #5fa0f4;
+        --cor3: #a7c8f3;
+        --cor4: #2d4b73;
+        --cor5: #849ebf;
+      }
+      /* ==================================================CONTAINER====================================================== */
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      /* ==================================================HEADER========================================================== */
+      .header {
+        background-color: var(--cor1);
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        flex-wrap: wrap;
+      }
+      .headerMenu {
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        margin: 10px;
+        padding: 5px;
+      }
+      .headerMenu:hover {
+        color: #7acdf3;
+        border-bottom: 1px solid white;
+      }
+      /* ================================================BANNER========================================================== */
+      .banner {
+        height: 20vh;
+        background-color: var(--cor2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        border-radius: 0px 0px 20px 20px;
+        box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.493);
+        flex-wrap: wrap;
+      }
+      .bannerNews {
+        height: 100px;
+        width: 200px;
+        box-shadow: 0px 0px 1px black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .banner a {
+        text-decoration: none;
+      }
+      .bannerNewsText {
+        width: 200px;
+        color: white;
+        text-align: center;
+        background-color: rgba(26, 26, 27, 0.37);
+        border-radius: 10px;
+      }
+      #bannerNews1 {
+        border-radius: 10px;
+        background-image: url(imgs/bicicletas.jpg);
+        background-size: cover;
+      }
+      #bannerNews2 {
+        border-radius: 10px;
+        background-image: url(imgs/esportesNaNeve.jpg);
+        background-size: cover;
+      }
+      #bannerNews3 {
+        border-radius: 10px;
+        background-image: url(imgs/natacao.jpg);
+        background-size: cover;
+      }
+      /* ================================================SECTION========================================================== */
+      .gridSection {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: "section aside";
+      }
+      .section {
+        grid-area: section;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .sectionImgsSlide {
+        height: 400px;
+        width: 95%;
+        background-color: var(--cor3);
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .sectionImgsSlide a {
+        text-decoration: none;
+      }
+      .slideImgs {
+        height: 250px;
+        width: 600px;
+        border-radius: 10px;
+        border: 2px solid rgba(128, 128, 128, 0.534);
+        box-shadow: 0px 0px 10px black;
+      }
+      .sectionNewsEmphasis {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        gap: 50px;
+        flex-wrap: wrap;
+        padding: 10px;
+      }
+
+      .sectionImgs {
+        height: 170px;
+        width: 200px;
+        border-radius: 10px;
+      }
+      .sectionNews {
+        height: 400px;
+        width: 200px;
+        text-align: justify;
+      }
+      .sectionNews a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header" id="#header">
+        <img src="#" alt="IconeLogo" />
+        <div>
+          <nav>
+            <a href="#" class="headerMenu">Opcao1</a>
+            <a href="#" class="headerMenu">Opcao2</a>
+            <a href="#" class="headerMenu">Opcao3</a>
+          </nav>
+        </div>
+      </header>
+      <div class="banner">
+        <a href="#"
+          ><div class="bannerNews" id="bannerNews1">
+            <p class="bannerNewsText">Informações</p>
+          </div></a
+        >
+        <a href="#">
+          <div class="bannerNews" id="bannerNews2">
+            <p class="bannerNewsText">Informações</p>
+          </div></a
+        >
+        <a href="#">
+          <div class="bannerNews" id="bannerNews3">
+            <p class="bannerNewsText">Informações</p>
+          </div></a
+        >
+        <a href="#">
+          <div class="bannerNews" id="bannerNews2">
+            <p class="bannerNewsText">Informações</p>
+          </div></a
+        >
+        <a href="#">
+          <div class="bannerNews" id="bannerNews3">
+            <p class="bannerNewsText">Informações</p>
+          </div></a
+        >
+      </div>
+      <div class="gridSection">
+        <section class="section">
+          <div class="sectionImgsSlide">
+            <a href="">
+              <img
+                src="imgs/esportesNaNeve.jpg"
+                alt="SlideImgs"
+                class="slideImgs"
+              />
+              <p>Informações</p>
+            </a>
+          </div>
+          <div class="sectionNewsEmphasis">
+            <div class="sectionNews">
+              <a href="#"
+                ><img
+                  src="imgs/skate.jpg"
+                  alt="NoticiaDestaque1"
+                  class="sectionImgs"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque facilis obcaecati necessitatibus repellat praesentium,
+                  iusto culpa eius deleniti alias molestias rerum nam quas hic
+                  cumque voluptas, laudantium officia explicabo sit?
+                </p>
+              </a>
+            </div>
+            <div class="sectionNews">
+              <a href="#"
+                ><img
+                  src="imgs/trilha.jpg"
+                  alt="NoticiaDestaque2"
+                  class="sectionImgs"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque facilis obcaecati necessitatibus repellat praesentium,
+                  iusto culpa eius deleniti alias molestias rerum nam quas hic
+                  cumque voluptas, laudantium officia explicabo sit?
+                </p></a
+              >
+            </div>
+            <div class="sectionNews">
+              <a href="#"
+                ><img
+                  src="imgs/skate.jpg"
+                  alt="NoticiaDestaque3"
+                  class="sectionImgs"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque facilis obcaecati necessitatibus repellat praesentium,
+                  iusto culpa eius deleniti alias molestias rerum nam quas hic
+                  cumque voluptas, laudantium officia explicabo sit?
+                </p></a
+              >
+            </div>
+            <div class="sectionNews">
+              <a href="#"
+                ><img
+                  src="imgs/trilha.jpg"
+                  alt="NoticiaDestaque4"
+                  class="sectionImgs"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque facilis obcaecati necessitatibus repellat praesentium,
+                  iusto culpa eius deleniti alias molestias rerum nam quas hic
+                  cumque voluptas, laudantium officia explicabo sit?
+                </p></a
+              >
+            </div>
+            <div class="sectionNews">
+              <a href="#"
+                ><img
+                  src="imgs/skate.jpg"
+                  alt="NoticiaDestaque5"
+                  class="sectionImgs"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque facilis obcaecati necessitatibus repellat praesentium,
+                  iusto culpa eius deleniti alias molestias rerum nam quas hic
+                  cumque voluptas, laudantium officia explicabo sit?
+                </p></a
+              >
+            </div>
+            <div class="sectionNews">
+              <a href="#"
+                ><img
+                  src="imgs/trilha.jpg"
+                  alt="NoticiaDestaque6"
+                  class="sectionImgs"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque facilis obcaecati necessitatibus repellat praesentium,
+                  iusto culpa eius deleniti alias molestias rerum nam quas hic
+                  cumque voluptas, laudantium officia explicabo sit?
+                </p></a
+              >
+            </div>
+            <div class="sectionNews">
+              <a href="#"
+                ><img
+                  src="imgs/skate.jpg"
+                  alt="NoticiaDestaque5"
+                  class="sectionImgs"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque facilis obcaecati necessitatibus repellat praesentium,
+                  iusto culpa eius deleniti alias molestias rerum nam quas hic
+                  cumque voluptas, laudantium officia explicabo sit?
+                </p></a
+              >
+            </div>
+            <div class="sectionNews">
+              <a href="#"
+                ><img
+                  src="imgs/trilha.jpg"
+                  alt="NoticiaDestaque6"
+                  class="sectionImgs"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque facilis obcaecati necessitatibus repellat praesentium,
+                  iusto culpa eius deleniti alias molestias rerum nam quas hic
+                  cumque voluptas, laudantium officia explicabo sit?
+                </p></a
+              >
+            </div>
+          </div>
+        </section>
+        <aside class="asideContainer">
+          <div class="asideObjects">
+            <h2>Ao vivo</h2>
+            <iframe
+              width="300"
+              height="255"
+              src="https://www.youtube.com/embed/jc9oJfCDs3E"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <hr class="asideTagHrStyle" />
+            <hr class="asideTagHrStyle" />
+            <div class="asideContainerNews">
+              <ol>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Facere, perferendis, architecto delectus obcaecati molestias
+                  neque doloremque sequi praesentium harum enim vero temporibus
+                  velit explicabo tenetur? Quidem quasi perspiciatis qui
+                  dignissimos?
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Facere, perferendis, architecto delectus obcaecati molestias
+                  neque doloremque sequi praesentium harum enim vero temporibus
+                  velit explicabo tenetur? Quidem quasi perspiciatis qui
+                  dignissimos?
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Facere, perferendis, architecto delectus obcaecati molestias
+                  neque doloremque sequi praesentium harum enim vero temporibus
+                  velit explicabo tenetur? Quidem quasi perspiciatis qui
+                  dignissimos?
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Facere, perferendis, architecto delectus obcaecati molestias
+                  neque doloremque sequi praesentium harum enim vero temporibus
+                  velit explicabo tenetur? Quidem quasi perspiciatis qui
+                  dignissimos?
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Facere, perferendis, architecto delectus obcaecati molestias
+                  neque doloremque sequi praesentium harum enim vero temporibus
+                  velit explicabo tenetur? Quidem quasi perspiciatis qui
+                  dignissimos?
+                </li>
+              </ol>
+            </div>
+            <div class="asideSocialNetWorks">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <footer>
+        <a href="#header"><img src="#" alt="LogoSite" /></a>
+        <p class="textFooter">&copy;News Noticias de Verdade</p>
+      </footer>
+    </div>
+  </body>
+</html>
