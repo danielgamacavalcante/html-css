@@ -41,6 +41,9 @@
         padding: 20px;
         flex-wrap: wrap;
       }
+      .header h1 {
+        color: white;
+      }
       .headerImgLogo {
         width: 50px;
         height: 40px;
@@ -61,7 +64,7 @@
       .banner {
         width: 100%;
         min-height: 20vh;
-        background-color: var(--cor2);
+        background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
         display: flex;
         justify-content: center;
         align-items: center;
@@ -126,6 +129,8 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        box-shadow: 0px 0px 1px black;
+        border-radius: 0px 0px 5px 5px;
       }
       .sectionImgsSlide a {
         text-decoration: none;
@@ -169,6 +174,7 @@
         width: 250px;
         text-align: center;
         padding: 10px;
+        flex-wrap: wrap;
       }
       .sectionNews:hover {
         box-shadow: 0px 0px 10px black;
@@ -182,32 +188,100 @@
       }
       /* =========================================================ASIDE=================================================== */
       .asideContainer {
+        grid-area: aside;
         background-color: var(--cor2);
         margin: 10px;
       }
       .asideObjects {
         text-align: center;
         color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .asideObjects h2 {
       }
       .asideTagHrStyle {
-        padding: 3px;
+        width: 100%;
+        border: 1px solid white;
         box-shadow: 0px 0px 1px var(--cor2);
+        margin-top: 10px;
+        margin-bottom: 10px;
       }
       .asideContainerNews {
-        width: 100%;
+        width: 90%;
         height: 100%;
         text-align: justify;
+        border: 1px solid black;
+        background-color: white;
+        color: black;
+      }
+      .asideContainerNews a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .asideList {
+        margin: 30px;
+      }
+      .asideList li {
+        margin-bottom: 20px;
+      }
+      /* =========================================================FOOTER=================================================== */
+      .footer {
+        width: 100%;
+        min-height: 10vh;
+        background-color: var(--cor1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        color: white;
+      }
+      .logoSite {
+        width: 50px;
+        height: 40px;
+      }
+      @media (max-width: 650px) {
+      }
+      @media (max-width: 950px) {
+        .header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .gridSection {
+          grid-template-columns: 1fr 1fr;
+          grid-template-areas: "section" "aside";
+          gap: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .banner {
+          flex-wrap: wrap;
+        }
+
+        .footer {
+          gap: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <header class="header" id="#header">
+      <header class="header" id="header">
         <img
           src="icon/icon-engrenagem.jpg"
           alt="IconeLogo"
           class="headerImgLogo"
         />
+        <h1>NOTÍCIAS DO MUNDO</h1>
         <div>
           <nav>
             <a href="#" class="headerMenu">Opcao1</a>
@@ -398,44 +472,55 @@
             <hr class="asideTagHrStyle" />
             <hr class="asideTagHrStyle" />
             <div class="asideContainerNews">
-              <ol>
+              <ol class="asideList">
                 <li>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Facere, perferendis, architecto delectus obcaecati molestias
-                  neque doloremque sequi praesentium harum enim vero temporibus
-                  velit explicabo tenetur? Quidem quasi perspiciatis qui
-                  dignissimos?
+                  <a href="">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Facere, perferendis, architecto delectus obcaecati molestias
+                    neque doloremque sequi praesentium harum enim vero
+                    temporibus velit explicabo tenetur? Quidem quasi
+                    perspiciatis qui dignissimos?
+                  </a>
                 </li>
                 <li>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Facere, perferendis, architecto delectus obcaecati molestias
-                  neque doloremque sequi praesentium harum enim vero temporibus
-                  velit explicabo tenetur? Quidem quasi perspiciatis qui
-                  dignissimos?
+                  <a href="#">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Facere, perferendis, architecto delectus obcaecati molestias
+                    neque doloremque sequi praesentium harum enim vero
+                    temporibus velit explicabo tenetur? Quidem quasi
+                    perspiciatis qui dignissimos?
+                  </a>
                 </li>
                 <li>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Facere, perferendis, architecto delectus obcaecati molestias
-                  neque doloremque sequi praesentium harum enim vero temporibus
-                  velit explicabo tenetur? Quidem quasi perspiciatis qui
-                  dignissimos?
+                  <a href="#">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Facere, perferendis, architecto delectus obcaecati molestias
+                    neque doloremque sequi praesentium harum enim vero
+                    temporibus velit explicabo tenetur? Quidem quasi
+                    perspiciatis qui dignissimos?
+                  </a>
                 </li>
                 <li>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Facere, perferendis, architecto delectus obcaecati molestias
-                  neque doloremque sequi praesentium harum enim vero temporibus
-                  velit explicabo tenetur? Quidem quasi perspiciatis qui
-                  dignissimos?
+                  <a href="#">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Facere, perferendis, architecto delectus obcaecati molestias
+                    neque doloremque sequi praesentium harum enim vero
+                    temporibus velit explicabo tenetur? Quidem quasi
+                    perspiciatis qui dignissimos?
+                  </a>
                 </li>
                 <li>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Facere, perferendis, architecto delectus obcaecati molestias
-                  neque doloremque sequi praesentium harum enim vero temporibus
-                  velit explicabo tenetur? Quidem quasi perspiciatis qui
-                  dignissimos?
+                  <a href="#">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Facere, perferendis, architecto delectus obcaecati molestias
+                    neque doloremque sequi praesentium harum enim vero
+                    temporibus velit explicabo tenetur? Quidem quasi
+                    perspiciatis qui dignissimos?
+                  </a>
                 </li>
               </ol>
             </div>
+            <hr class="asideTagHrStyle" />
             <div class="asideSocialNetWorks">
               <ul>
                 <li></li>
@@ -446,9 +531,13 @@
           </div>
         </aside>
       </div>
-      <footer>
-        <a href="#header"><img src="#" alt="LogoSite" /></a>
-        <p class="textFooter">&copy;News Noticias de Verdade</p>
+      <footer class="footer">
+        <a href="#header"
+          ><img src="icon/icon-engrenagem.jpg" alt="LogoSite" class="logoSite"
+        /></a>
+        <div>
+          <p class="textFooter">&copy;News Noticias de Verdade</p>
+        </div>
       </footer>
     </div>
   </body>
