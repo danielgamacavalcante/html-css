@@ -41,6 +41,10 @@
         padding: 20px;
         flex-wrap: wrap;
       }
+      .headerImgLogo {
+        width: 50px;
+        height: 40px;
+      }
       .headerMenu {
         color: white;
         text-decoration: none;
@@ -52,6 +56,7 @@
         color: #7acdf3;
         border-bottom: 1px solid white;
       }
+
       /* ================================================BANNER========================================================== */
       .banner {
         height: 20vh;
@@ -118,6 +123,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
       }
       .sectionImgsSlide a {
         text-decoration: none;
@@ -126,39 +132,80 @@
         height: 250px;
         width: 600px;
         border-radius: 10px;
-        border: 2px solid rgba(128, 128, 128, 0.534);
-        box-shadow: 0px 0px 10px black;
+        box-shadow: 0px 0px 3px black;
+        margin-top: 20px;
+        margin-bottom: 10px;
       }
+      .sectionSlideText {
+        background-color: rgba(0, 0, 0, 0.404);
+        border-radius: 5px;
+        padding: 20px;
+        color: white;
+      }
+      /* ===============================================================SECTION OBJECT===================================== */
       .sectionNewsEmphasis {
+        background-color: #2d4b73;
         height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
-        margin: 20px;
-        gap: 50px;
+        margin: 10px;
+        gap: 40px;
         flex-wrap: wrap;
         padding: 10px;
       }
 
       .sectionImgs {
-        height: 170px;
-        width: 200px;
+        height: 180px;
+        width: 230px;
         border-radius: 10px;
       }
+
       .sectionNews {
+        background-color: white;
         height: 400px;
-        width: 200px;
-        text-align: justify;
+        width: 250px;
+        text-align: center;
+        padding: 10px;
+      }
+      .sectionNews:hover {
+        box-shadow: 0px 0px 10px black;
       }
       .sectionNews a {
         text-decoration: none;
+      }
+      .sectionObjectTexts {
+        color: black;
+        text-align: justify;
+      }
+      /* =========================================================ASIDE=================================================== */
+      .asideContainer {
+        background-color: var(--cor2);
+        margin: 10px;
+      }
+      .asideObjects {
+        text-align: center;
+        color: white;
+      }
+      .asideTagHrStyle {
+        padding: 3px;
+        box-shadow: 0px 0px 1px var(--cor2);
+      }
+      .asideContainerNews {
+        width: 100%;
+        height: 100%;
+        text-align: justify;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <header class="header" id="#header">
-        <img src="#" alt="IconeLogo" />
+        <img
+          src="icon/icon-engrenagem.jpg"
+          alt="IconeLogo"
+          class="headerImgLogo"
+        />
         <div>
           <nav>
             <a href="#" class="headerMenu">Opcao1</a>
@@ -203,7 +250,12 @@
                 alt="SlideImgs"
                 class="slideImgs"
               />
-              <p>Informações</p>
+              <p class="sectionSlideText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                quisquam, fugit nam enim veritatis dolorem possimus laboriosam
+                eveniet nemo commodi, incidunt praesentium unde, illum a ducimus
+                esse optio officia nulla.
+              </p>
             </a>
           </div>
           <div class="sectionNewsEmphasis">
@@ -214,7 +266,7 @@
                   alt="NoticiaDestaque1"
                   class="sectionImgs"
                 />
-                <p>
+                <p class="sectionObjectTexts">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Itaque facilis obcaecati necessitatibus repellat praesentium,
                   iusto culpa eius deleniti alias molestias rerum nam quas hic
@@ -229,7 +281,7 @@
                   alt="NoticiaDestaque2"
                   class="sectionImgs"
                 />
-                <p>
+                <p class="sectionObjectTexts">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Itaque facilis obcaecati necessitatibus repellat praesentium,
                   iusto culpa eius deleniti alias molestias rerum nam quas hic
@@ -244,7 +296,7 @@
                   alt="NoticiaDestaque3"
                   class="sectionImgs"
                 />
-                <p>
+                <p class="sectionObjectTexts">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Itaque facilis obcaecati necessitatibus repellat praesentium,
                   iusto culpa eius deleniti alias molestias rerum nam quas hic
@@ -259,7 +311,7 @@
                   alt="NoticiaDestaque4"
                   class="sectionImgs"
                 />
-                <p>
+                <p class="sectionObjectTexts">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Itaque facilis obcaecati necessitatibus repellat praesentium,
                   iusto culpa eius deleniti alias molestias rerum nam quas hic
@@ -274,7 +326,7 @@
                   alt="NoticiaDestaque5"
                   class="sectionImgs"
                 />
-                <p>
+                <p class="sectionObjectTexts">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Itaque facilis obcaecati necessitatibus repellat praesentium,
                   iusto culpa eius deleniti alias molestias rerum nam quas hic
@@ -289,7 +341,7 @@
                   alt="NoticiaDestaque6"
                   class="sectionImgs"
                 />
-                <p>
+                <p class="sectionObjectTexts">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Itaque facilis obcaecati necessitatibus repellat praesentium,
                   iusto culpa eius deleniti alias molestias rerum nam quas hic
@@ -304,7 +356,7 @@
                   alt="NoticiaDestaque5"
                   class="sectionImgs"
                 />
-                <p>
+                <p class="sectionObjectTexts">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Itaque facilis obcaecati necessitatibus repellat praesentium,
                   iusto culpa eius deleniti alias molestias rerum nam quas hic
@@ -319,7 +371,7 @@
                   alt="NoticiaDestaque6"
                   class="sectionImgs"
                 />
-                <p>
+                <p class="sectionObjectTexts">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Itaque facilis obcaecati necessitatibus repellat praesentium,
                   iusto culpa eius deleniti alias molestias rerum nam quas hic
